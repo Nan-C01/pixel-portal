@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="search-tab active-tab">
+                <a href="#">Search<img src="./img/icons/search_tab_icon_active.png" alt=""></a>
+            </li>
+            <li class="offline-tab">
+                <a href="#">Offline<img src="./img/icons/offline_tab_icon_default.png" alt=""></a>
+            </li>
+            <li class="address-tab">
+                <a href="#">Address<img src="./img/icons/address_tab_icon_default.png"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Pixel Portal</h1>
+    <div class="search-options">
+        
+        <input type="text" class="search-bar" value="0x7D31221d40677269EdE43660047e4aE36bab671A">
+
+        <select class="chain-select">
+            <option value="polygon">Polygon</option>
+            <option value="arbitrum">Arbitrum</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="bsc">BNB Smart Chain</option>
+            <option value="optimism">Optimism</option>
+            <option value="cardano">Cardano</option>
+        </select>
+
+        <button class="save-search-button" type="button">
+            Save
+        </button>
+
+    </div>
+
+    <div class="items-wrapper">
+        <div class="token-info-wrapper">
+            <img src="./img/1.png" alt="token picture" class="token-img">
+            <ul class="token_data">
+                <li class="token-data-type data_chain">Chain: <span class="token-data-value chain_value">0x89</span></li>
+                <li class="token-data-type data_contract-type">contract_type: <span class="token-data-value contract-type_value">ERC1155</span></li>
+                <li class="token-data-type data_tpken-id">tpken_id: <span class="token-data-value tpken-id_value">10293867487367283904983728202019837489567489303Jnfihur84879r48</span></li>
+                <li class="token-data-type data_token-id">token_id: <span class="token-data-value token-id_value">0x7uohru784jnur87478476847u7rj7f9f9k94894j8475784y494y3638i39</span></li>
+                <li class="token-data-type data_owner-of">owner_of: <span class="token-data-value owner-of_value">0xurui74885t8957y749yh7f4984f76476dy8d7udd8399837y746gf832gyd</span></li>
+                <li class="token-data-type data_token-address">token_address: <span class="token-data-value token-address_value">oxjuryid874764hif58fmid74h3847f6gddy5yhfb63h8478473d683d</span></li>
+                <li class="token-data-type data_block-number">block_number: <span class="token-data-value block-number_value">31106650</span></li>
+                <li class="token-data-type data_block-number-minted">block_number_minted: <span class="token-data-value block-number-minted_value">31101009</span></li>
+                <li class="token-data-type data_token-hash">token_hash: <span class="token-data-value token-hash_value">11fd1076ecc57bugy47875904</span></li>
+                <li class="token-data-type data_last-token-uri-sync">last_token_uri_sync: <span class="token-data-value last-token-uri-sync_value">2022-07-24T22:24:10.239Z</span></li>
+                <li class="token-data-type data_last-metadata-sync">last_metadata_sync: <span class="token-data-value last-metadata-sync_value">2022-08-05T06:21:10.166Z</span></li>
+            </ul>
+        </div>
+
+        <div class="token-info-wrapper">
+            <img src="./img/2.png" alt="token picture" class="token-img">
+            <ul class="token_data">
+                <li class="token-data-type data_chain">Chain: <span class="token-data-value chain_value">0x89</span></li>
+                <li class="token-data-type data_contract-type">contract_type: <span class="token-data-value contract-type_value">ERC1155</span></li>
+                <li class="token-data-type data_tpken-id">tpken_id: <span class="token-data-value tpken-id_value">10293867487367283904983728202019837489567489303Jnfihur84879r48</span></li>
+                <li class="token-data-type data_token-id">token_id: <span class="token-data-value token-id_value">0x7uohru784jnur87478476847u7rj7f9f9k94894j8475784y494y3638i39</span></li>
+                <li class="token-data-type data_owner-of">owner_of: <span class="token-data-value owner-of_value">0xurui74885t8957y749yh7f4984f76476dy8d7udd8399837y746gf832gyd</span></li>
+                <li class="token-data-type data_token-address">token_address: <span class="token-data-value token-address_value">oxjuryid874764hif58fmid74h3847f6gddy5yhfb63h8478473d683d</span></li>
+                <li class="token-data-type data_block-number">block_number: <span class="token-data-value block-number_value">31106650</span></li>
+                <li class="token-data-type data_block-number-minted">block_number_minted: <span class="token-data-value block-number-minted_value">31101009</span></li>
+                <li class="token-data-type data_token-hash">token_hash: <span class="token-data-value token-hash_value">11fd1076ecc57bugy47875904</span></li>
+                <li class="token-data-type data_last-token-uri-sync">last_token_uri_sync: <span class="token-data-value last-token-uri-sync_value">2022-07-24T22:24:10.239Z</span></li>
+                <li class="token-data-type data_last-metadata-sync">last_metadata_sync: <span class="token-data-value last-metadata-sync_value">2022-08-05T06:21:10.166Z</span></li>
+            </ul>
+        </div>
+
+        <div class="token-info-wrapper">
+            <img src="./img/3.png" alt="token picture" class="token-img">
+            <ul class="token_data">
+                <li class="token-data-type data_chain">Chain: <span class="token-data-value chain_value">0x89</span></li>
+                <li class="token-data-type data_contract-type">contract_type: <span class="token-data-value contract-type_value">ERC1155</span></li>
+                <li class="token-data-type data_tpken-id">tpken_id: <span class="token-data-value tpken-id_value">10293867487367283904983728202019837489567489303Jnfihur84879r48</span></li>
+                <li class="token-data-type data_token-id">token_id: <span class="token-data-value token-id_value">0x7uohru784jnur87478476847u7rj7f9f9k94894j8475784y494y3638i39</span></li>
+                <li class="token-data-type data_owner-of">owner_of: <span class="token-data-value owner-of_value">0xurui74885t8957y749yh7f4984f76476dy8d7udd8399837y746gf832gyd</span></li>
+                <li class="token-data-type data_token-address">token_address: <span class="token-data-value token-address_value">oxjuryid874764hif58fmid74h3847f6gddy5yhfb63h8478473d683d</span></li>
+                <li class="token-data-type data_block-number">block_number: <span class="token-data-value block-number_value">31106650</span></li>
+                <li class="token-data-type data_block-number-minted">block_number_minted: <span class="token-data-value block-number-minted_value">31101009</span></li>
+                <li class="token-data-type data_token-hash">token_hash: <span class="token-data-value token-hash_value">11fd1076ecc57bugy47875904</span></li>
+                <li class="token-data-type data_last-token-uri-sync">last_token_uri_sync: <span class="token-data-value last-token-uri-sync_value">2022-07-24T22:24:10.239Z</span></li>
+                <li class="token-data-type data_last-metadata-sync">last_metadata_sync: <span class="token-data-value last-metadata-sync_value">2022-08-05T06:21:10.166Z</span></li>
+            </ul>
+        </div>
+    </div>
+        
+</body>
+</html>

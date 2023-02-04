@@ -1,0 +1,329 @@
+:root {
+    --color-1: #111A21;
+    --color-2: #4FFFF4;
+    --color-3: #194B48;
+    --color-4: #F5F5F5;
+    --color-5: #19244B;
+    --color-6: #96A0A9;
+    --color-7: #FFFFFF;
+    --color-8: #1F2933;
+    --color-9: #162029;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* My own CSS starts here */
+
+
+body {
+    width: 834px;
+    height: 100vw;
+    overflow-y: scroll;
+    margin: 0 auto;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    font-family: 'VT323', monospace;
+    /* border: 1px solid gray; */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 33px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-7)
+}
+
+ul {
+    list-style: none;
+}
+
+.chain-select, .save-search-button, .token-info-wrapper {
+ border-radius: 20px;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+    padding: 0 62px;
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--color-9);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    display: block;
+}
+
+.search-tab img {
+    position: relative;
+    margin-left: 11px;
+}
+
+.offline-tab img {
+    position: relative;
+    bottom: -5px;
+    margin-left: 9px;
+}
+
+.address-tab img {
+    position: relative;
+    bottom: -2.5px;
+    margin-left: 7px;
+}
+
+.active-tab a {
+    color: var(--color-2);
+}
+
+.search-bar {
+    background: var(--color-1) url('./img/icons/search_bar_icon.png') 664.5px center no-repeat;
+    display: block;
+    padding: 0 80px;
+    width: 739px;
+    height: 94px;
+    border: 4px solid var(--color-8);
+    border-radius: 15px;
+    color: var(--color-2);
+    margin: 0 auto 34px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+}
+
+.chain-select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('./img/icons/dropdown-icon.png');
+    background-repeat: no-repeat;
+    background-position: 666px, center;
+    background-size: 24px;
+    outline: none;
+    margin: 0 auto 20px;
+    text-align: center;
+    display: block;
+    width: 739px;
+    height: 81px;
+    padding-bottom: 2px;
+    border: none;
+    color: var(--color-4);
+    background-color: var(--color-3);
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+  }
+
+.save-search-button {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 739px;
+    height: 81px;
+    padding-bottom: 2px;
+    border: none;
+    color: var(--color-5);
+    background-color: var(--color-2);
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.search-options {
+    margin-bottom: 85px;
+}
+
+.items-wrapper {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.token-info-wrapper {
+    margin: 0 0 24px;
+    width: 739px;
+    height: 254px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px 0 25px;
+    gap: 21px;
+    background-color: var(--color-9);
+    font-size: 16px;
+    line-height: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.token-info-wrapper:last-child {
+    margin-bottom: 118px;
+}
+
+.token-img {
+    display: block;
+    height: 219px;
+    width: 219px;
+    border-radius: 20px;
+}
+
+.token-data-type {
+    color:var(--color-6);
+}
+
+.token-data-value {
+    color: var(--color-2);
+}
+
+
+
+/* Media query for iPhone 11 Pro Max */
+@media screen and (max-width: 414px) {
+
+    body {
+        width: 414px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 32px;
+        margin-bottom: 9.66px;
+    }
+
+
+    .navbar {
+        width: 100vw;
+    }
+    
+    .navbar ul {
+        height: 46px;
+        padding: 0 26px;
+        font-size: 15px;
+    }
+    
+    .search-tab img {
+        margin-left: 2.5px;
+        width: 7px;
+        height: 7px;
+    }
+    
+    .offline-tab img {
+        bottom: 0;
+        margin-left: 4.2px;
+        width: 10.5px;
+        height: 10.5px;
+    }
+    
+    .address-tab img {
+        bottom: 0;
+        margin-left: 3.9px;
+        width: 8.17px;
+        height: 9.3px;
+    }
+
+
+    .search-bar {
+        background-position: 341px;
+        background-size: 16.92px;
+        font-size: 15px;
+        width: 382px;
+        height: 45.28px;
+        padding: 0 61.5px;
+        border-width: 2px;
+        margin-bottom: 16.38px;
+    }
+
+    .chain-select, .save-search-button {
+        width: 382px;
+        height: 39px;
+        font-size: 20px;
+    }
+
+    .chain-select {
+        background-position: 344.27px, center;
+        background-size: 13px 7px;
+        margin-bottom: 9.63px;
+    }
+
+    .search-options {
+        margin-bottom: 54px;
+    }
+
+
+    .token-info-wrapper {
+        margin: 0 0 11px;
+        width: 382px;
+        height: 169px;
+        padding: 0 11px 0 12.9px;
+        gap: 10.8px;
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .token-info-wrapper:last-child {
+        margin-bottom: 57px;
+    }
+
+    .token-img {
+        height: 113.2px;
+        width: 113.2px;
+        margin-bottom: 34px;
+    }
+
+    .token-data-value {
+        word-break: break-all;
+    }
+}
