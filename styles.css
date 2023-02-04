@@ -229,7 +229,6 @@ select::-ms-expand {
 }
 
 
-
 /* Media query for iPhone 11 Pro Max */
 @media screen and (max-width: 414px) {
 
@@ -325,5 +324,24 @@ select::-ms-expand {
 
     .token-data-value {
         word-break: break-all;
+    }
+}
+
+
+/* media query to make nav bar completely visble on desktop */
+@media screen and (min-width: 835px) {
+    body {
+        width: 100vw;
+    }
+
+    .navbar {
+        background-color: var(--color-9);
+    }
+
+    .navbar ul {
+        width: 834px;
+        margin: 0 auto;
+        box-shadow: none;
+        background-color: none;
     }
 }
