@@ -186,6 +186,10 @@ select::-ms-expand {
     cursor: pointer;
 }
 
+.save-search-button:active {
+    background-color:#26ccc1;
+}
+
 .search-options {
     margin-bottom: 85px;
 }
